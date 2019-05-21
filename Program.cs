@@ -10,17 +10,20 @@ namespace c_sharp3
     {
         static void Main(string[] args)
         {
+            int a, b
             Console.Write("Enter a number: ");
-            int num1 = Convert.ToInt32(Console.ReadLine());
+            a = int.Parse(Console.ReadLine());
 
             Console.Write("Enter another number: ");
-            int num2 = Convert.ToInt32(Console.ReadLine());
+            b = int.Parse(Console.ReadLine());
+            Console.WriteLine(a + b);
+            Console.WriteLine(a - b);
+            Console.WriteLine(a * b);
+            Console.WriteLine(a / b);
+            Console.WriteLine(a % b);
+            Console.ReadLine();
 
-            Console.WriteLine("{0} + {1} = {2}", num1, num2, num1 + num2);
-            Console.WriteLine("{0} - {1} = {2}", num1, num2, num1 - num2);
-            Console.WriteLine("{0} x {1} = {2}", num1, num2, num1 * num2);
-            Console.WriteLine("{0} / {1} = {2}", num1, num2, num1 / num2);
-            Console.WriteLine("{0} mod {1} = {2}", num1, num2, num1 % num2);
+
         }
     }
 }
